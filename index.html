@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="pdfContainer">
+    <div id="contentContainer">
+      <h1>Agenda</h1>
+      <table id="studyTable">
+        <tr>
+          <th>Data</th>
+          <th>Tarefa</th>
+          <th>Selecionar</th>
+        </tr>
+      </table>
+    </div>
+    <button onclick="adicionarLinha()">Adicionar Nova Linha</button>
+    <button onclick="excluirLinhasSelecionadas()">Excluir Linhas Selecionadas</button>
+    <button onclick="exportarPDF()">Exportar PDF</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
